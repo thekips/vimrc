@@ -60,5 +60,8 @@ Plug 'junegunn/fzf.vim'
 nmap <C-p> :Files<CR>
 nmap <C-e> :Buffers<CR>
 
+" Plug to add or alter delimeter in visual mode.
+tpope/vim-surround
+
 " End call vim-plug function.
 call plug#end()
