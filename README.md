@@ -7,7 +7,7 @@
 - 懒人一行式命令
 
   ```bash
-  git clone git@github.com:thekips/vimrc.git ~/vim; cd vim; sh install.sh;
+  git clone https://github.com/thekips/vimrc.git ~/vim; cd vim; sh install.sh;
   ```
 
 - 之后在vim中执行`PlugInstall`命令安装插件，等待安装完成即可。更多命令可参考[[vim-plug#commands]](https://github.com/junegunn/vim-plug#commands)。
