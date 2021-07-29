@@ -36,6 +36,9 @@ inoremap ( ()<ESC>i
 inoremap [ []<ESC>i
 inoremap { {}<ESC>i
 
+" Make system paste Ctrl-v in insert mode more normally. 
+:set pastetoggle=<f5>
+
 " Set %% in ex like <%:h<Tab>,N>.
 cnoremap <expr> %% getcmdtype( ) == ':' ? expand('%:h').'/' : '%%'
 
