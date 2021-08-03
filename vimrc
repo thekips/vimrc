@@ -63,6 +63,9 @@ Plug 'junegunn/fzf.vim'
 nmap <C-p> :Files<CR>
 nmap <C-e> :Buffers<CR>
 
+" Plug to simulate a file system explorer.
+Plug 'preservim/nerdtree'
+
 " Plug to add or alter delimeter in visual mode.
 Plug 'tpope/vim-surround'
 
