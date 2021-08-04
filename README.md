@@ -2,45 +2,25 @@
 
 ### 安装
 
-##### 懒人必备
+1. 下载vimrc文件和vim-plug
 
-- 懒人一行式命令
+- Linux
 
   ```bash
   git clone https://github.com/thekips/vimrc.git ~/vim; cd ~/vim; sh install.sh;
   ```
 
-- 之后在vim中执行`PlugInstall`命令安装插件，等待安装完成即可。更多命令可参考[[vim-plug#commands]](https://github.com/junegunn/vim-plug#commands)。
+- Windows
 
-  ```ex
-  :PlugInstall
+  ```powershell
+  git clone https://github.com/thekips/vimrc.git $HOME/vim; cd $HOME/vim; ./install.ps1
   ```
 
-##### 逐步分解
+2. 在vim中执行`PlugInstall`命令安装插件，更多命令可参考 [vim-plug#commands](https://github.com/junegunn/vim-plug#commands)。
 
-- 下载项目至本地
-
-  ```bash
-  git clone git@github.com:thekips/vimrc.git ~/vim
-  ```
-
-- 执行下列命令
-
-  ```bash
-  cd vim
-  ```
-
-- 执行脚本复制vim文件
-
-  ```bash
-  sh install.sh
-  ```
-
-- 在vim中执行`PlugInstall`命令安装插件
-
-  ```ex
-  :PlugInstall
-  ```
+```ex
+:PlugInstall
+```
 
 ### 使用
 
