@@ -1,5 +1,7 @@
 "================
+"
 " Basic Settings
+"
 "================
 
 " Setting about display.
@@ -10,6 +12,9 @@ syntax on
 set ignorecase
 set hlsearch
 set incsearch
+"" Setting no-highlight-search with <C-l>.
+nnoremap<silent> <C-l> :<C-u>nohlsearch<CR><C-l>
+
 
 " Setting about tab.
 set expandtab
@@ -25,9 +30,11 @@ set encoding=utf-8
 set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 
 
-"=============
+"==============
+"
 " Key Mapping
-"=============
+"
+"==============
 
 " Key map to make auto-pair.
 inoremap ' ''<ESC>i
@@ -43,9 +50,11 @@ inoremap { {}<ESC>i
 cnoremap <expr> %% getcmdtype( ) == ':' ? expand('%:h').'/' : '%%'
 
 
-"==================
+"===================
+"
 " vim-plug manager
-"==================
+"
+"===================
 
 " Begin call vim-plug function.
 call plug#begin('~/.vim/plugged')
@@ -59,15 +68,22 @@ Plug 'tpope/vim-commentary'
 " Plug to find file etc faset with ex <:Files,N> and <:Buffers,N>.
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-" Additional key map.
-nmap <C-p> :Files<CR>
-nmap <C-e> :Buffers<CR>
+"" Usage & Additional key map.
+nnoremap <leader>cp :Files<CR>
+nnoremap <leader>cb :Buffers<CR>
 
 " Plug to simulate a file system explorer.
 Plug 'preservim/nerdtree'
+"" Usage & Additional key map.
+nnoremap <leader>ce :NERDTree<CR>
 
 " Plug to add or alter delimeter in visual mode.
 Plug 'tpope/vim-surround'
+
+" status-line format and color scheme
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+let g:airline_theme='bubblegum'
 
 " End call vim-plug function.
 call plug#end()
