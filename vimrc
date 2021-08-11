@@ -60,7 +60,7 @@ cnoremap <expr> %% getcmdtype( ) == ':' ? expand('%:h').'/' : '%%'
 call plug#begin('~/.vim/plugged')
 
 " Plug to auto Complete code.
-Plug 'Valloric/YouCompleteMe'
+" Plug 'Valloric/YouCompleteMe'
 
 " Plug to easily comment code with combine key <gcc,N> or <gc,V>.
 Plug 'tpope/vim-commentary'
@@ -81,9 +81,9 @@ nnoremap <leader>ce :NERDTree<CR>
 Plug 'tpope/vim-surround'
 
 " status-line format and color scheme
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-let g:airline_theme='bubblegum'
+Plug 'itchyny/lightline.vim'
+set laststatus=2
+set noshowmode
 
 " End call vim-plug function.
 call plug#end()
