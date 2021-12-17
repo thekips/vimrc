@@ -43,6 +43,10 @@ inoremap ( ()<ESC>i
 inoremap [ []<ESC>i
 inoremap { {}<ESC>i
 
+" Easy yank and paste.
+vnoremap <leader>y "+y
+nnoremap <leader>p "*p
+
 " Make system paste Ctrl-v in insert mode more normally. 
 :set pastetoggle=<f5>
 
@@ -79,6 +83,9 @@ nnoremap <leader>ce :NERDTree<CR>
 
 " Plug to add or alter delimeter in visual mode.
 Plug 'tpope/vim-surround'
+
+" Plug to autocomplete python
+" Plug 'davidhalter/jedi-vim'
 
 " status-line format and color scheme
 Plug 'itchyny/lightline.vim'
