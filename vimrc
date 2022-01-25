@@ -37,17 +37,17 @@ set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 "==============
 
 " Key map to make auto-pair.
-inoremap ' ''<ESC>i
-inoremap " ""<ESC>i
-inoremap ( ()<ESC>i
-inoremap [ []<ESC>i
-inoremap { {}<ESC>i
+inoremap ' ''<Left>
+inoremap " ""<Left>
+inoremap ( ()<Left>
+inoremap [ []<Left>
+inoremap { {}<Left>
 
 " Easy yank and paste.
 vnoremap <leader>y "+y
 nnoremap <leader>p "*p
 
-" Make system paste Ctrl-v in insert mode more normally. 
+" Make system paste Ctrl-v in insert mode more normally.
 :set pastetoggle=<f5>
 
 " Set %% in ex like <%:h<Tab>,N>.
@@ -75,7 +75,7 @@ Plug 'junegunn/fzf.vim'
 "" Usage & Additional key map.
 nnoremap <leader>cp :Files<CR>
 nnoremap <leader>cb :Buffers<CR>
-
+"
 " Plug to simulate a file system explorer.
 Plug 'preservim/nerdtree'
 "" Usage & Additional key map.
