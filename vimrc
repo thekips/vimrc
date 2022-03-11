@@ -43,6 +43,16 @@ inoremap ( ()<Left>
 inoremap [ []<Left>
 inoremap { {}<Left>
 
+" Key map to jump out of bracket.
+func SkipPair()
+    if getline('.')[col('.') - 1] == ')' || getline('.')[col('.') - 1] == ']' || getline('.')[col('.') - 1] == '"' || getline('.')[col('.') - 1] == "'" || getline('.')[col('.') - 1] == '}'
+        return "\<ESC>la"
+    else
+        return "\t"
+    endif
+endfunc
+inoremap <TAB> <c-r>=SkipPair()<CR>
+
 " Easy yank and paste.
 vnoremap <leader>y "+y
 nnoremap <leader>p "*p
