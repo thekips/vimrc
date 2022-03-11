@@ -7,13 +7,13 @@
 - Linux
 
   ```bash
-  git clone https://github.com/thekips/vimrc.git ~/vim; cd ~/vim; sh install.sh;
+  git clone https://github.com/thekips/vimrc.git ~/vim; sh ~/vim/install.sh;
   ```
 
 - Windows
 
   ```powershell
-  git clone https://github.com/thekips/vimrc.git $HOME/vim; cd $HOME/vim; ./install.ps1
+  git clone https://github.com/thekips/vimrc.git $HOME/vim; .$HOME/vim/install.ps1
   ```
 
 2. 在vim中执行`PlugInstall`命令安装插件，更多命令可参考 [vim-plug#commands](https://github.com/junegunn/vim-plug#commands)。
