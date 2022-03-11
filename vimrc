@@ -24,6 +24,7 @@ set tabstop=4
 " Setting about indent.
 set autoindent
 set smartindent
+set backspace=2
 
 " Setting about encode.
 set encoding=utf-8
